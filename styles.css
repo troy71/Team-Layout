@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--ff: 'Inter', sans-serif;
+	--fs-16: 1rem;
+	--fs-18: 1.125rem;
+	--fs-20: 1.25rem;
+	--fs-36: 2.25rem;
+	--fw-600: 600;
+	--clr-grey: #98A2B3;
+	--clr-black: #101828;
+	--clr-dark-grey: #667085;
+	--clr-dark-purple: #6941C6;	
+	--clr-light-purple: #AFACC6;
+	--clr-off-white: #F9FAFB;
+	--clr-blue-green: #344054;
+	--clr-white: #FFFFFF;
+	--clr-button-border: #D0D5DD;
+	--ls-2: -2%;
+	--lh-30: 1.875rem
+}
+
+body {
+	font-family: var(--ff);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+}
+
+main {
+	max-width: 1280px;
+}
+
+.top-part {
+	margin-bottom: 4rem;
+}
+
+h2 {
+	font-size: var(--fs-16);
+	color: var(--clr-dark-purple);
+	font-weight: var(--fw-600);
+	margin-bottom: .75rem;
+}
+
+h3 {
+	font-size: var(--fs-36);
+	color: var(--clr-black);
+	font-weight: var(--fw-600);
+	margin-bottom: 1.25rem;
+}
+
+h4{
+	color: var(--clr-black);
+	font-size: var(--fs-18);
+}
+
+.hiring-para {
+	line-height: var(--lh-30);
+	color: var(--clr-dark-grey);
+	font-size: var(--fs-20);
+}
+
+.button-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: .75rem;
+}
+
+button {
+	margin-top: 2.5rem;
+	padding: .75rem 1.25rem;
+	background-color: var(--clr-white);
+	border: 1px solid var(--clr-button-border);
+	border-radius: .5rem;
+	color: var(--clr-blue-green);
+
+}
+
+button:hover {
+	background-color: var(--clr-dark-purple);
+	color: var(--clr-white);
+}
+
+.workers {
+	display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+	padding-left: 2rem;
+	padding-right: 32px;
+}
+
+.workers-profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.5rem;
+	border: 1px solid var(--clr-grey);
+	background-color: var(--clr-off-white);
+	border-radius: .5rem;
+	
+}
+
+.workers-profile:hover{
+	background-color: var(--clr-dark-purple);
+	color: var(--clr-white);
+}
+
+.workers-profile:hover h4 {
+  color: var(--clr-white);
+}
+
+.workers-title {
+	color: var(--clr-dark-purple);
+	font-weight: var(--fw-600);
+}
+
+.workers-profile:hover .workers-title {
+	color: var(--clr-light-purple);
+
+}
+
+.workers-profile:hover .fa-brands {
+  color: var(--clr-white);
+}
+
+.profile-image{
+	margin-bottom: 1.25rem;
+}
+
+.workers-profile-para{
+	margin-top: .5rem;
+	margin-bottom: 1rem;
+
+}
+
+.social{
+	display: flex;	
+	gap: 1rem;
+}
+
+.fa-brands{
+	color: var(--clr-grey);
+	font-size: var(--fs-20);
+}
+
+@media (max-width: 768px) {
+  .workers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+}
